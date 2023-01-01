@@ -7,24 +7,16 @@
 \usepackage[colorlinks, urlcolor = blue]{hyperref}
 
 % Arabic typesetting
-\usepackage[
-    bidi     = basic, 
-    headfoot = arabic,
-    layout   = counters.tabular
-]{babel}
-\babelprovide[
-    import,
-    main,
-    justification = kashida,
-    transforms    = kashida.plain
-]{arabic}
-\babelfont{rm}{Amiri}
+\usepackage{polyglossia}
+\setdefaultlanguage{arabic}
+\setotherlanguage{english}
+\newfontfamily\arabicfont[Script = Arabic]{Amiri}
 
 % Poems typesetting
 \usepackage{bidipoem}
 
 \title{اقبل معاذير من يأتيك معتذرا}
-\author{البحتري}
+\author{\textarabic{البحتري}}
 \date{}
 
 \begin{document}
@@ -36,7 +28,7 @@
 \maketitle
 
 % Al-Diwan Link
-\href{https://www.aldiwan.net/poem64546.html}{https://www.aldiwan.net/poem64546.html}
+\textenglish{\href{https://www.aldiwan.net/poem64546.html}{https://www.aldiwan.net/poem64546.html}}
 
 % Center vertically
 \vspace*{\fill}
